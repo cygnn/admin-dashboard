@@ -1,0 +1,200 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.maincontainer{
+    background-color: #f9a8d4;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.sidebar{
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-rows: 0.2fr 1fr 1fr;
+    padding: 20px;
+    padding-top: 10px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.dashboard{    
+    height: 60px;
+    width: 60px;
+}
+
+.svgs{
+    height: 30px;
+    width: 30px;
+}
+
+.links, .settings{
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.sublinks, .settings-items{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.settings{
+    justify-content: start;
+    gap: 20px;
+}
+
+.header{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: aqua;
+}
+
+.upper{
+    display: flex;
+    background-color: rgb(90, 220, 64);
+    align-items: center;
+}
+
+.leftside{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    padding-left: 4rem;
+    gap: 1rem;
+}
+
+.rightside{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 3rem;
+    width: 30%;
+    flex: 1 1 0%;
+    padding: 0px 5rem 0px 0px;
+}
+
+.searchbar{
+    height: 30px;
+    width: 75%;
+    border-radius: 50px;
+    background-color: dimgrey;
+}
+
+.dot{
+    height: 45px;
+    width: 45px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+ .big{
+    height: 4rem;
+    width: 4rem;
+}
+
+.lower{
+    display: flex;
+    align-items: center;
+    background-color: blueviolet;
+}
+
+.user-info{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    gap: 15px;
+    padding-left: 4rem;
+}
+
+.buttons{
+    display: flex;
+    gap: 3rem;
+    justify-content: space-around;
+}
+button{
+    border-radius: 2rem;
+    height: 50px;
+    width: 130px;
+}
+
+.content{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-color: seagreen;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.projectcontainer{
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.projects{
+    background-color:steelblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+    padding: 15px;
+}
+
+.announcements{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: firebrick;
+}
+
+.trending{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: yellowgreen;
+}
+
+.card{
+    
+    width: 300px;
+    background-color: thistle;
+}
+
+.news{
+    padding-left: 25px;
+}
+
+.asd{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-text{
+    height: 40px;
+}
+
+.card-text p{
+    margin: 0;
+}
