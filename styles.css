@@ -1,10 +1,11 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 .maincontainer{
     background-color: #f9a8d4;
-    width: 100vw;
-    height: 100vh;
+    width: 99vw;
+    height: 99vh;
     margin: 0;
     border: 0;
     padding: 0;
@@ -16,17 +17,25 @@ body{
 .sidebar{
     grid-column: 1 / 2;
     grid-row: 1 / 3;
-    background-color: antiquewhite;
+    background-color: #0ea5e9;
     display: grid;
     grid-template-rows: 0.2fr 1fr 1fr;
     padding: 20px;
     padding-top: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.menu{
+    font-size: 2rem;
 }
 
 .logo{
     display: flex;
     align-items: center;
     gap: 5px;
+    fill: white;
 }
 
 .dashboard{    
@@ -38,6 +47,7 @@ body{
     height: 30px;
     width: 30px;
 }
+
 
 .links, .settings{
     display: flex;
@@ -51,6 +61,7 @@ body{
     display: flex;
     align-items: center;
     gap: 25px;
+    fill: white;
 }
 
 .settings{
@@ -61,29 +72,28 @@ body{
 .header{
     display: grid;
     grid-template-rows: 1fr 1fr;
-    background-color: aqua;
+    background-color: #fafafa;
 }
 
 .upper{
     display: flex;
-    background-color: rgb(90, 220, 64);
     align-items: center;
 }
 
 .leftside{
     display: flex;
     align-items: center;
-    width: 70%;
+    width: 65%;
     padding-left: 4rem;
     gap: 1rem;
 }
 
 .rightside{
     display: flex;
-    justify-content: end;
+    justify-content: start;
     align-items: center;
     gap: 3rem;
-    width: 30%;
+    width: 35%;
     flex: 1 1 0%;
     padding: 0px 5rem 0px 0px;
 }
@@ -92,7 +102,7 @@ body{
     height: 30px;
     width: 75%;
     border-radius: 50px;
-    background-color: dimgrey;
+    background-color: #d1d5db;
 }
 
 .dot{
@@ -111,7 +121,6 @@ body{
 .lower{
     display: flex;
     align-items: center;
-    background-color: blueviolet;
 }
 
 .user-info{
@@ -120,6 +129,19 @@ body{
     width: 60%;
     gap: 15px;
     padding-left: 4rem;
+}
+
+.nomargin{
+    margin: 0;
+}
+
+.name{
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.bigger{
+    font-size: 1.5rem;
 }
 
 .buttons{
@@ -131,57 +153,85 @@ button{
     border-radius: 2rem;
     height: 50px;
     width: 130px;
+    background-color: #0ea5e9;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 0;
 }
 
 .content{
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    background-color: seagreen;
+    background-color: #e5e7eb;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     grid-template-rows: 1fr 1fr;
+    box-shadow: 0 0 5px 5px red;
+    width: 100%;
+    height: 100%;
 }
 
 .projectcontainer{
     grid-column: 1/2;
     grid-row: 1/3;
+    padding: 1rem;
 }
 
 .projects{
-    background-color:steelblue;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
-    gap: 15px;
-    padding: 15px;
+    gap: 2rem;
 }
 
 .announcements{
     grid-column: 2/3;
     grid-row: 1/2;
-    background-color: firebrick;
+    padding: 1rem;
 }
 
 .trending{
     grid-column: 2/3;
     grid-row: 2/3;
-    background-color: yellowgreen;
+    padding: 1rem;
+    
 }
 
 .card{
     
-    width: 300px;
-    background-color: thistle;
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 2rem;
+    border-left: 10px solid #f59e0b;
 }
 
+
+.card-2{
+    width: 300px;
+    height: 28rem;
+    background-color: white;
+    border-radius: 10px ;
+    padding: 2rem;
+}
 .news{
-    padding-left: 25px;
+    border-bottom: 1px solid #4b5563;
+
 }
 
 .asd{
+    padding: 2rem;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     gap: 15px;
+    width: 300px;
+    height: 16rem;
+    /* flex: 1 1 0%; */
+    border: 0;
 }
 
 .card-item{
@@ -197,4 +247,28 @@ button{
 
 .card-text p{
     margin: 0;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.project-cardtext{
+    height: 11rem;
+}
+
+.icon1{
+    display: flex;
+    justify-content: end;
+}
+
+.icon{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.secondary-text{
+    color: #78716c;
 }
